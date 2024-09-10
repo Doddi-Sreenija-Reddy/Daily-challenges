@@ -7,7 +7,6 @@ def missing_number(arr):
             j=j+1
         else:
             c = i+1
-            i = i-1
             print("Missing number: ",c)
             break
     if c==0:
