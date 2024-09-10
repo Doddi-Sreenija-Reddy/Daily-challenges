@@ -1,4 +1,4 @@
-def dutch_national_flag_sort(arr):
+def flag_sort(arr):
     low, mid, high = 0, 0, len(arr) - 1
     while mid <= high:
         if arr[mid] == 0:
@@ -11,5 +11,5 @@ def dutch_national_flag_sort(arr):
             arr[high], arr[mid] = arr[mid], arr[high]
             high -= 1
 arr = list(map(int, input("Enter the array elements (0, 1, and 2 only) separated by spaces: ").split()))
-dutch_national_flag_sort(arr)
+flag_sort(arr)
 print("Sorted array:", arr)
