@@ -4,5 +4,5 @@ def duplicate(arr):
         for j in range(i+1,n):
             if (arr[i] == arr[j]):
                 print("Duplicate number: ",arr[i])
-arr=
+arr=list(map(int, input().split()))
 duplicate(arr)
