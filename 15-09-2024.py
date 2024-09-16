@@ -1,11 +1,9 @@
 def trap(height):
     if not height or len(height) < 3:
         return 0
-    
     left, right = 0, len(height) - 1
     left_max, right_max = height[left], height[right]
     water_trapped = 0
-    
     while left < right:
         if height[left] < height[right]:
             if height[left] >= left_max:
@@ -19,12 +17,7 @@ def trap(height):
             else:
                 water_trapped += right_max - height[right]
             right -= 1
-    
     return water_trapped
-
-# Enable user input
 input_heights = input("Enter the heights of the bars separated by spaces: ")
 height = list(map(int, input_heights.split()))
-
-# Output the result
 print("Water trapped:", trap(height))
