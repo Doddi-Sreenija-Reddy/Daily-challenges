@@ -8,7 +8,6 @@ def flag_sort(arr):
         elif arr[mid] == 1:
             #sreenija reddy
             #ch.en.u4cse22016
-            #git push
             mid += 1
         else:
             arr[high], arr[mid] = arr[mid], arr[high]
